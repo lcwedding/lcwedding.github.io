@@ -17,29 +17,13 @@
     var secondaryPasswortRequest = "Falsches Passwort, bitte erneut eingeben:";
     var passwordRequest = primaryPasswortRequest;
     var password="rosi";
-    var passwordInput="";
+    var passwordInput=""; // TODO space?
     
     while (passwordInput != password) {
         passwordInput=prompt(passwordRequest,' ');
         passwordRequest = secondaryPasswortRequest;
     }
+    document.location.href = "topnav.html";
 </script>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Timetable</a></li>
-            <li><a href="#">Places</a>
-                <ul>
-                    <li><a href="#">Boarding</a></li>
-                    <li><a href="#">Church</a></li>
-                    <li><a href="loctest.html">Location</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Help</a></li>
-        </ul>
-    </nav>
-</body>
 
 </html>
