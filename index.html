@@ -4,11 +4,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="script-src 'self'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <title>Dropdown Menü</title>
 </head>
+
+<script>
+    var primaryPasswortRequest = "Bitte Passwort eingeben. Es befindet sich auf der Einladung unterhalb des QR-Codes.";
+    var secondaryPasswortRequest = "Falsches Passwort, bitte erneut eingeben:";
+    var passwordRequest = primaryPasswortRequest;
+    var password="rosi";
+    var passwordInput="";
+    
+    while (passwordInput != password) {
+        passwordInput=prompt(passwordRequest,' ');
+        passwordRequest = secondaryPasswortRequest;
+    }
+</script>
 
 <body>
     <nav>
@@ -19,7 +33,7 @@
                 <ul>
                     <li><a href="#">Boarding</a></li>
                     <li><a href="#">Church</a></li>
-                    <li><a href="#">Location</a></li>
+                    <li><a href="loctest.html">Location</a></li>
                 </ul>
             </li>
             <li><a href="#">Help</a></li>
